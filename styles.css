@@ -1,5 +1,45 @@
-/* your beautiful css styling goes here! */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-/* Note: an asteroid image is included in this repo.
-Feel free to use it if you like. */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
 
+.scoreboard {
+	float: left;
+	position: absolute;
+	margin: 10px;
+	padding: 20px;
+	font-family: 'Open Sans';
+	line-height: 1.5em;
+	background: #eee;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.enemy {
+/*  r: 20px;*/
+  fill: url(#image);  
+}
+
+#player {
+  r: 20px;
+  fill: url(#grad1);
+  shape-rendering: optimizeSpeed;  
+}
+
+.helpDesk {
+  right: 0;
+  position: fixed;
+}
+
+#pacman {
+  fill: url(#pacmanImage); 
+  right: 0;
+  position: fixed;
+  /*display: none;*/
+  r: 20px;
+
+}
